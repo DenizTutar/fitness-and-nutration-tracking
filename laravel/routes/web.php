@@ -13,11 +13,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/customers', [CustomerController::class,]);
-Route::get('/meals', [MealController::class,]);
-Route::get('/exercises', [ExerciseController::class,]);
-Route::get('/activities', [ActivityController::class,]);
-Route::get('/foods', [FoodController::class,]);
+Route::resource('/customers', [CustomerController::class,]);
+Route::resource('/meals', [MealController::class,]);
+Route::resource('/exercises', [ExerciseController::class,]);
+Route::resource('/activities', [ActivityController::class,]);
+Route::resource('/foods', [FoodController::class,]);
 
 
 
